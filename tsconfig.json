@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022", "DOM"],
+    "types": ["node"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "allowImportingTsExtensions": false,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@ccb/core-api": ["packages/core-api/src/index.ts"],
+      "@ccb/shell-gohighlevel": ["packages/shell-gohighlevel/src/index.ts"],
+      "@ccb/shell-hubspot": ["packages/shell-hubspot/src/index.ts"],
+      "@ccb/shell-pipedrive": ["packages/shell-pipedrive/src/index.ts"],
+      "@ccb/shell-monday": ["packages/shell-monday/src/index.ts"],
+      "@ccb/shell-makecom": ["packages/shell-makecom/src/index.ts"],
+      "@ccb/gateway": ["packages/gateway/src/index.ts"]
+    }
+  },
+  "include": ["packages/*/src/**/*.ts", "packages/*/test/**/*.ts", "vitest.config.ts"]
+}
